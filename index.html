@@ -215,7 +215,94 @@
         // }
         //     funcionExpresada();
 
-        // Clase 11 Arregos (Arrays)
+    // Clase 11 Arregos (Arrays)
+        // const a =[];
+        // const b =[1,true,"hola",["A","B","C",[1,2,3]]];
+        // console.log(a);
+        // console.log(b);
+        // console.log(b.length);
+        // console.log(b[2]);
+        // console.log(b[0]);
+        // console.log(b[3]);
+        // console.log(b[3][2]);
+        // console.log(b[3][3][0]);
+
+        // const c = Array.of("x","y","z",9,8,7);
+        // console.log(c)
+
+        // const d = Array(100).fill(false);
+        // console.log(d);
+
+        // const e = new Array();
+        // console.log(e);
+
+        // const f = new Array(1,2,3,true,false);
+        // console.log(f);
+
+        // const colores = ["Rojo","Verde","Azul"]
+        // console.log(colores)
+        
+        // colores.push("negro")
+        // console.log(colores)
+
+        // colores.pop();
+        // console.log(colores)
+
+        // colores.forEach(function(el,index){
+        //     console.log(`<li id="${index}">${el}</li>`)
+        // });
+    // Clase 12 Objetos
+
+            let a = new String("hola");
+            // console.log(a);
+            const b = {}
+            console.log(b);
+
+            const c = new Object();
+            console.log(c);
+//Dentro de un objeto a las variable se los va a llamr atributos/propiedades.
+// y a las funciones se les llamara metodos
+            const jon = {
+                nombre:"Jon",
+                apellido:"Mir",
+                edad:35,
+                pasatiempo:["Correr","Hacer ejercicio","Dar clases"],
+                soltero:false,
+                contacto:{
+                    email:"pepito@gmail.com",
+                    twitter:"@pepo",
+                    movil:"23123123332"
+                },
+                saludar:function(){
+                    console.log("hola :)");
+                },
+                decirMiNombre: function(){
+                    console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter}`)
+                }
+            }
+
+            console.log(jon);
+            console.log(jon["nombre"]);
+            console.log(jon["apellido"]);
+            console.log(jon.nombre);
+            console.log(jon.apellido);
+            console.log(jon.edad);
+            console.log(jon.soltero);
+            console.log(jon.pasatiempo);
+            console.log(jon.pasatiempo[1]);
+            console.log(jon.contacto);
+            console.log(jon.contacto.twitter);
+            jon.saludar();
+            jon.decirMiNombre();
+
+                console.log(Object.keys(jon));
+                console.log(Object.values(jon));
+                // Pregunta si tiene tal propiedad en de vuelve true o false
+                console.log(jon.hasOwnProperty("nombre")); 
+                console.log(jon.hasOwnProperty("nacimiento"));
+
+
+
 
 
         </script>
